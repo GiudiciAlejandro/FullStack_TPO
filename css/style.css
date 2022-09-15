@@ -1,0 +1,29 @@
+.carousel-item{
+    border:1px solid rgb(85, 84, 84);
+    height:100px;
+    line-height:300px;
+    text-align:center;
+    background-color: black;
+    
+  }
+
+.carousel-inner{
+  min-height: 80px;
+}
+ 
+
+
+
+.carousel-caption h5 {
+    top: 80%;
+    color: white;
+}
+
+.img_item{
+  position: relative;
+  width: 25%;
+  height: auto; 
+  top: 2%;
+  left: 5%;
+}
+
