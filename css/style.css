@@ -5,15 +5,12 @@
     text-align:center;
     background-color: black;
     
-  }
+}
 
 .carousel-inner{
   min-height: 80px;
 }
  
-
-
-
 .carousel-caption h5 {
     top: 80%;
     color: white;
@@ -27,3 +24,72 @@
   left: 5%;
 }
 
+.navbar a{
+  text-decoration:none;
+  color:inherit;
+  font-size:14px;
+  } 
+
+.navbar li{
+  display:inline-block;
+  padding:5px 10px;
+  background-color:#000;
+  border:1px solid #000;
+  text-align:center;
+  color:#fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;  
+  }
+
+/* .navbar li:hover{
+  background-color:#fff;
+  color:rgb(206, 21, 21);
+  } */
+
+.fa-sharp:hover{
+  color: aqua;
+}
+
+.fa-html5:hover{
+  color:coral;
+}
+
+.fa-css3:hover{
+  color:  rgb(12, 16, 245);
+}
+
+.fa-js:hover{
+  color:  rgb(245, 230, 12);
+}
+
+.fa-python:hover{
+  color:  rgb(12, 218, 245);
+}
+
+.fa-person:hover{
+  color:  rgb(240, 20, 185);
+}
+
+.fa-sharp:hover{
+  color:  rgb(12, 245, 51);
+}
+
+.navbar{
+  display: flex;   
+  height: 80px;
+  background-color:black;
+}
+
+.navmenu{
+  display: flex;   
+  width: 100%;
+}
+
+.header2{
+  display: flex;
+  align-items: center; 
+  height: 100px;
+  background-color:black;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
