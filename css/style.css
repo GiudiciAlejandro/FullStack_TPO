@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 .carousel-item{
     border:1px solid rgb(85, 84, 84);
     height:100px;
@@ -31,7 +35,7 @@
   } 
 
 .navbar li{
-  display:inline-block;
+  float: left;
   padding:5px 10px;
   background-color:#000;
   border:1px solid #000;
@@ -40,40 +44,8 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25rem;  
   }
-
-/* .navbar li:hover{
-  background-color:#fff;
-  color:rgb(206, 21, 21);
-  } */
-
-.fa-sharp:hover{
-  color: aqua;
-}
-
-.fa-html5:hover{
-  color:coral;
-}
-
-.fa-css3:hover{
-  color:  rgb(12, 16, 245);
-}
-
-.fa-js:hover{
-  color:  rgb(245, 230, 12);
-}
-
-.fa-python:hover{
-  color:  rgb(12, 218, 245);
-}
-
-.fa-person:hover{
-  color:  rgb(240, 20, 185);
-}
-
-.fa-sharp:hover{
-  color:  rgb(12, 245, 51);
-}
-
+ 
+  
 .navbar{
   display: flex;   
   height: 80px;
@@ -81,9 +53,9 @@
 }
 
 .navmenu{
-  display: flex;   
+  list-style: none; 
   width: 100%;
-}
+} 
 
 .header2{
   display: flex;
@@ -92,4 +64,89 @@
   background-color:black;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+  .fa-sharp:hover{
+    color:  rgb(12, 245, 51);
+    -webkit-transform:scale(1.6);transform:scale(1.6);
+  }
+
+  .fa-html5:hover{
+  color:coral;
+  -webkit-transform:scale(1.6);transform:scale(1.6);
+}
+
+.fa-css3-alt:hover{
+  color:  rgb(9, 127, 206);
+  -webkit-transform:scale(1.6);transform:scale(1.6);
+}
+
+.fa-js:hover{
+  color:  rgb(245, 230, 12);
+  -webkit-transform:scale(1.6);transform:scale(1.6);
+}
+
+.fa-python:hover{
+  color:  rgb(12, 218, 245);
+  -webkit-transform:scale(1.6);transform:scale(1.6);
+}
+
+.fa-person:hover{
+  color:  rgb(240, 20, 185);
+  -webkit-transform:scale(1.6);transform:scale(1.6);
+}
+
+.frase{
+  display: block;
+  background-color: #2b2732;
+  color: white;
+  font-style: italic;
+  text-align: justify;
+  padding: 12px;
+}
+
+.contenedor{
+  display: flex ;
+  flex-direction: row;
+}
+
+.box {
+display: flex;
+margin-top: 10px;
+}
+
+.box > * {
+  flex: 1 0.5 1;   
+}
+
+.lado {
+  width: 25%;
+  flex: 0.5 1.5 auto;
+  /* background-color: aqua; */
+}
+
+.central {
+  width: 75%;
+  flex: 1.5 0.5 auto;
+  margin-left: 10%;
+  /* background-color: bisque; */
+}
+
+.central > h3{
+  text-align: center;
+}
+
+.central > p{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+}
+
+
+.central > ul{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+}
+
+.aside_img{
+  max-width: 100%;
 }
