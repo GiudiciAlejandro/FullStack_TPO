@@ -1,11 +1,14 @@
+
+/* CSS Resets */
 *{
-  box-sizing: border-box;
   margin-left: 0%;
+  margin-right: 0%;
   padding: 0%;
 }
 
 .navbar{
   display: flex;   
+  width: 100%;
   height: 80px;
   background-color:black;
   border-top: #fff;
@@ -32,7 +35,7 @@
 
 .navmenu{
   list-style: none; 
-  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 } 
 
 .header2{
@@ -72,6 +75,7 @@ color:coral;
 
 .frase{
   display: block;
+  width: 100%;
   background-color: #2b2732;
   color: white;
   font-style: italic;
@@ -109,11 +113,14 @@ margin-top: 10px;
   margin:auto;
 }
 
+.lado img:hover {
+  transform: scale(1.1);
+}
+
 .central {
   width: 75%;
   flex: 1.5 0.5 auto;
   margin-left: 10%;
-  /* background-color: bisque; */
 }
 
 .central > h3{
