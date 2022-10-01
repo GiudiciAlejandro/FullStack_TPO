@@ -52,42 +52,14 @@ function traerHeader(pagina) {
 
   let carouselv = `
 <!-- Carousel que muestra los diferentes lenguajes de programación tratados en el sitio -->
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-    <div class="img_item">
-    <img src="images/html.png" class="d-block" alt="HTML">
-    </div>
-    <div class="carousel-caption d-none d-md-block">
-    <h3>HTML HyperText Markup Language</h3>
-    </div>
-    </div>
-    <div class="carousel-item">
-    <div class="img_item">
-    <img src="images/css.png" class="d-block " alt="CSS">
-    </div>
-    <div class="carousel-caption d-none d-md-block">
-    <h3>CSS Cascading Style Sheet</h3>
-    </div>
-    </div>
-    <div class="carousel-item">
-    <div class="img_item">
-    <img src="images/js.png" class="d-block " alt="Javascript">
-    </div>
-    <div class="carousel-caption d-none d-md-block">
-    <h3>JS Javascript</h3>
-    </div>
-    </div>
-    <div class="carousel-item">
-    <div class="img_item">
-        <img src="images/python.png" class="d-block " alt="Python">
-      </div>
-      <div class="carousel-caption d-none d-md-block">
-        <h3>Py Python</h3>
-      </div>
-      </div>
-      </div>
-      </div> 
+<div class="slider-frame">
+  <ul>
+    <li><a href="html.html"><img src="images/html.png" alt=""> <h3> HyperText Markup Language</h3></a></li>
+    <li><a href="css.html"><img src="images/css.png" alt=""> <h3> CSS Cascading Style Sheet</h3></a></li>
+    <li><a href="js.html"><img src="images/js.png" alt=""> <h3> JS Javascript</h3></a></li>
+    <li><a href="python.html"><img src="images/python.png" alt=""> <h3> Py Python</h3></a></li>
+  </ul>
+</div>
       `
   pagina= getNameURLWeb();
   // console.log(pagina)
@@ -114,7 +86,7 @@ function traerHeader(pagina) {
   } 
   // console.log(encabezado)
   encabezado += menuv
-  console.log(encabezado)
+  // console.log(encabezado)
   return encabezado
 }
 

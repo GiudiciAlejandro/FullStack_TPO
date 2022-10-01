@@ -1,33 +1,16 @@
 *{
   box-sizing: border-box;
+  margin-left: 0%;
+  padding: 0%;
 }
 
-.carousel-item{
-    border:1px solid rgb(85, 84, 84);
-    height:100px;
-    line-height:300px;
-    text-align:center;
-    background-color: black;
-    
+.navbar{
+  display: flex;   
+  height: 80px;
+  background-color:black;
+  border-top: #fff;
+  border-style: solid;
 }
-
-.carousel-inner{
-  min-height: 80px;
-}
- 
-.carousel-caption h5 {
-    top: 80%;
-    color: white;
-}
-
-.img_item{
-  position: relative;
-  width: 25%;
-  height: auto; 
-  top: 2%;
-  left: 5%;
-}
-
 .navbar a{
   text-decoration:none;
   color:inherit;
@@ -46,11 +29,6 @@
   }
  
   
-.navbar{
-  display: flex;   
-  height: 80px;
-  background-color:black;
-}
 
 .navmenu{
   list-style: none; 
@@ -66,14 +44,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-  .fa-sharp:hover{
-    color:  rgb(12, 245, 51);
-    -webkit-transform:scale(1.6);transform:scale(1.6);
-  }
-
-  .fa-html5:hover{
-  color:coral;
+.fa-sharp:hover{
+  color:  rgb(12, 245, 51);
   -webkit-transform:scale(1.6);transform:scale(1.6);
+}
+
+.fa-html5:hover{
+color:coral;
+-webkit-transform:scale(1.6);transform:scale(1.6);
 }
 
 .fa-css3-alt:hover{
@@ -91,17 +69,14 @@
   -webkit-transform:scale(1.6);transform:scale(1.6);
 }
 
-/* .fa-person:hover{
-  color:  rgb(240, 20, 185);
-  -webkit-transform:scale(1.6);transform:scale(1.6);
-} */
 
 .frase{
   display: block;
   background-color: #2b2732;
   color: white;
   font-style: italic;
-  text-align: justify;
+  font-size: 1.25rem;
+  text-align: center;
   padding: 12px;
 }
 
@@ -112,6 +87,8 @@
 
 .box {
 display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 margin-top: 10px;
 }
 
@@ -120,9 +97,16 @@ margin-top: 10px;
 }
 
 .lado {
-  width: 25%;
+  width: 15%;
   flex: 0.5 1.5 auto;
-  /* background-color: aqua; */
+  align-items: center;
+}
+
+.lado img {
+  width: 50%;
+  height: auto;
+  display:block;
+  margin:auto;
 }
 
 .central {
@@ -150,5 +134,13 @@ margin-top: 10px;
 .aside_img{
   max-width: 100%;
   margin-top: 5%;
+}
+
+
+
+
+@media (min-width: 600px){
+  .central{order: 1;}
+  .lado{order: 2;}
 }
 
