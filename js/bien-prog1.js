@@ -84,9 +84,6 @@ function traerHeader(pagina) {
       encabezado=jsv;
       break;
   } 
-  // console.log(encabezado)
-  encabezado += menuv
-  // console.log(encabezado)
   return encabezado
 }
 
