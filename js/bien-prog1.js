@@ -94,3 +94,16 @@ function getNameURLWeb(){
 }
 
 document.getElementById("header_id").innerHTML = traerHeader()
+
+// HTML page 
+
+function toggleHidden(selector) {
+  element = document.querySelector(selector);
+  element.hidden = element.hidden ? false : true;
+}
+
+function switchIcon(selector) {
+  var icon = document.querySelector(selector);
+  icon.classList.toggle('fa-chevron-down');
+  icon.classList.toggle('fa-chevron-up');
+}
