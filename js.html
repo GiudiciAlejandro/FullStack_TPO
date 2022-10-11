@@ -13,31 +13,119 @@
 </head>
 
 <body>
-  
+
   <header class="header2">
     <span id="header_id"></span>
   </header>
-    <div class="ppal">
-      <aside class="navbar">
-        <nav>
-          <ul class="navmenu">
-            <li> <a href="index.html"><i class="fa-sharp fa-solid fa-house fa-2xl"></i></a></li>
-            <li> <a href="html.html"><i class="fa-brands fa-html5 fa-2xl"></i></a> </li>
-            <li> <a href="css.html"><i class="fa-brands fa-css3-alt fa-2xl"></i></a> </li>
-            <li> <a href="js.html"><i class="fa-brands fa-js fa-2xl"></i></a> </li>
-            <li> <a href="contacto.html"><i class="fa-sharp fa-solid fa-at fa-2xl"></i></a> </li>
-          </ul>
-        </nav>
-      </aside>
-      <q class="frase">Controlar la complejidad es la esencia de la programación
-        -- Brian Kernigan</q>
-      <main>
-        <section class="central">
-          <h3><i>Las buenas prácticas en programación son buenas ideas...</i></h3>
-          
-        </section>
-      </main>
-    </div>
+  <div class="ppal">
+    <aside class="navbar">
+      <nav>
+        <ul class="navmenu">
+          <li> <a href="index.html"><i class="fa-sharp fa-solid fa-house fa-2xl"></i></a></li>
+          <li> <a href="html.html"><i class="fa-brands fa-html5 fa-2xl"></i></a> </li>
+          <li> <a href="css.html"><i class="fa-brands fa-css3-alt fa-2xl"></i></a> </li>
+          <li> <a href="js.html"><i class="fa-brands fa-js fa-2xl"></i></a> </li>
+          <li> <a href="contacto.html"><i class="fa-sharp fa-solid fa-at fa-2xl"></i></a> </li>
+        </ul>
+      </nav>
+    </aside>
+    <q class="frase">Controlar la complejidad es la esencia de la programación
+      -- Brian Kernigan</q>
+    <main>
+      <section class="central">
+        <h3><i>Las buenas prácticas en programación son buenas ideas...</i></h3>
+        <p>
+          Seguir las mejores prácticas de JavaScript puede ayudar a lograr cargas de página más rápidas y un mejor
+          rendimiento, mejorar la legibilidad del código y facilitar el mantenimiento y la depuración. El código
+          cuidadosamente elaborado también puede evitar errores y problemas de seguridad, especialmente si se
+          complementa con herramientas de diagnóstico en tiempo real, como la supervisión de errores de JavaScript.
+        </p>
+        <ol>
+          <li>
+            <div onClick="toggleHidden('#info-element-1');switchIcon('#icon1')">Evite las variables globales.
+              <i id="icon1" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-1" hidden>
+            Minimice el uso de variables globales. <br>
+            Esto incluye todos los tipos de datos, objetos y funciones. <br>
+            Las variables y funciones globales pueden ser sobrescritas por otros scripts. <br>
+            En su lugar, use variables locales y aprenda a usar los cierres. <br>
+          </p>
+          <li>
+            <div onClick="toggleHidden('#info-element-2');switchIcon('#icon2')">Declarar siempre variables locales.
+              <i id="icon2" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-2" hidden>
+            Todas las variables utilizadas en una función deben declararse como variables locales.<br>
+            Las variables locales deben declararse con la palabra clave var, let o const, de lo contrario se convertirán
+            en variables globales.
+          </p>
+          <li>
+            <div onClick="toggleHidden('#info-element-3');switchIcon('#icon3')">Declaraciones en la parte superior.
+              <i id="icon3" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-3" hidden>
+            Es una buena práctica de codificación colocar todas las declaraciones en la parte superior de cada secuencia
+            de comandos o función. <br>
+            Esto ayuda a: <br><br Tener un codigo más limpio. <br>
+            Proporcionar un solo lugar para buscar variables locales. <br>
+            Hace que sea más fácil evitar variables globales no deseadas (implícitas). <br>
+            Reduce la posibilidad de nuevas declaraciones no deseadas. <br>
+          </p>
+          <li>
+            <div onClick="toggleHidden('#info-element-4');switchIcon('#icon4')">Dar nombres descriptivos a las variables
+              y funciones.
+              <i id="icon4" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-4" hidden>
+            Haga que los nombres de sus variables, funciones y otras estructuras de código sean fáciles de entender para
+            cualquier persona que trabaje con su código.
+            No use nombres que sean demasiado cortos o demasiado largos, y tenga cuidado de que describan sucintamente
+            su propio propósito.
+            También tenga en cuenta que JavaScript es un lenguaje que distingue entre mayúsculas y minúsculas.
+          </p>
+          <li>
+            <div onClick="toggleHidden('#info-element-5');switchIcon('#icon5')">Comenta tu código.
+              <i id="icon5" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-5" hidden>
+            Comentar es un tema candente en la programación. Algunos dicen que no es necesario en absoluto, pero el
+            código sin comentarios se vuelve difícil de leer después de un tiempo, especialmente cuando se trabaja en
+            equipo o en proyectos heredados. Por otro lado, los comentarios demasiado largos y detallados son
+            innecesarios porque llevarán más tiempo leerlos y comprenderlos.
+          </p>
+          <li>
+            <div onClick="toggleHidden('#info-element-6');switchIcon('#icon6')">Declare los Objetos con const.
+              <i id="icon6" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-6" hidden>
+            Declarar objetos con const evitará cualquier cambio accidental de tipo
+          </p>
+          <li>
+            <div onClick="toggleHidden('#info-element-7');switchIcon('#icon7')">Finalice Switch con valores predeterminados (default)
+              <i id="icon7" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-7" hidden>
+            Siempre finalice sus declaraciones de Switch con un valor predeterminado. Incluso si crees que no hay necesidad de ello.
+          </p>
+        </ol>
+        </p>
+      </section>
+
+      <h3>Aqui tienen un video de una buena práctica para cuando usamos funciones en JS</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jmxZrIHPRDg" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    </main>
+  </div>
   <script src="js/bien-prog1.js"></script>
   <script src="https://kit.fontawesome.com/b44b1d9943.js" crossorigin="anonymous"></script>
 </body>
