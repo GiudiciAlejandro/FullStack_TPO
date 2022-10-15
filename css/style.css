@@ -170,3 +170,17 @@ footer>h3 {
     border-bottom: #000 solid;
   }
 }
+
+.formulario label {
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+
+.formulario li {
+  list-style: none;
+}
+
+.texto{
+  font-size: 0.9em;
+}
