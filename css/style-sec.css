@@ -1,0 +1,181 @@
+/* CSS Resets */
+* {
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 0%;
+}
+
+
+.ppal {
+  width: 99vw;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 10rem 4fr ;
+  grid-template-areas:
+    "frase frase"
+    "navbar centro";
+  justify-content: center;
+  justify-items: center;
+}
+
+.ppal .central {
+  grid-area: centro;
+}
+
+.ppal .frase {
+  grid-area: frase;
+}
+
+
+.ppal .navbar {
+  width: 100%;
+  height: 50px;
+  grid-area: navbar;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar li {
+  padding: 15px 10px;
+  background-color: white;
+  text-align: center;
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.navmenu {
+  list-style: none;
+}
+
+
+ol p {
+  padding-left: 10px;
+  width: 97%;
+}
+
+.central ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.central li {
+  font-size: 1.3em;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  width: 97%;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: .7em;
+  color: gray;
+  float: right;
+  margin-top: 5px;
+}
+
+/* Nav menu Fontawasome hover efects*/
+.fa-sharp:hover {
+  color: rgb(12, 245, 51);
+  -webkit-transform: scale(1.6);
+  transform: scale(1.6);
+}
+
+.fa-html5:hover {
+  color: coral;
+  -webkit-transform: scale(1.6);
+  transform: scale(1.6);
+}
+
+.fa-css3-alt:hover {
+  color: rgb(9, 127, 206);
+  -webkit-transform: scale(1.6);
+  transform: scale(1.6);
+}
+
+.fa-js:hover {
+  color: rgb(245, 230, 12);
+  -webkit-transform: scale(1.6);
+  transform: scale(1.6);
+}
+
+.fa-python:hover {
+  color: rgb(12, 218, 245);
+  -webkit-transform: scale(1.6);
+  transform: scale(1.6);
+}
+
+
+.frase {
+  display: block;
+  width: 97%;
+  background-color: #2b2732;
+  color: white;
+  font-style: italic;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 12px;
+}
+
+.central>h3 {
+  text-align: center;
+}
+
+.central>p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+}
+
+.central>ul {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+}
+
+footer>h3 {
+  border-top: 2px solid red;
+  text-align: center;
+}
+
+
+
+@media (max-width: 600px) {
+  .ppal {
+    grid-template-columns: 100%;
+    grid-template-areas: 
+      "frase  frase "
+      "navbar navbar"
+      "centro centro ";
+    margin: 15px;
+  } 
+
+  .navmenu>li {
+    display: inline;
+    margin-right: 10px;
+    padding: 0 2px;
+  }
+
+  .navbar {
+    border-top: #000 solid;
+    border-bottom: #000 solid;
+  }
+}
+
+.formulario label {
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+
+.formulario li {
+  list-style: none;
+}
+
+.texto{
+  font-size: 0.9em;
+}
