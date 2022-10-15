@@ -7,7 +7,7 @@
 
 
 .ppal {
-  width: 100%;
+  width: 99vw;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 10rem 4fr 1fr ;
@@ -28,13 +28,8 @@
 
 .ppal .derecha {
   grid-area: derecha;
-}
-
-
-.ppal .derecha> img {
-  max-width: 250px;
-  height: 100%;
-
+  background-image: url("../images/codigo.jpg");
+  width: 90%;
 }
 
 
@@ -66,6 +61,7 @@ ol p {
   padding-left: 10px;
   width: 97%;
 }
+
 .central ol {
   list-style-type: none;
   padding: 0;
@@ -161,8 +157,19 @@ footer>h3 {
       "navbar  centro";
     margin: 15px;
   }
-
+  
+.ppal .derecha {
+  width: 100vw;
+  height: 100px;
 }
+}
+
+
+/* .ppal .derecha >img {
+  object-fit:fill;
+} */
+
+
 
 @media (max-width: 600px) {
   .ppal {
