@@ -107,31 +107,3 @@ function switchIcon(selector) {
   icon.classList.toggle('fa-chevron-up');
 }
 
-
-
-// Get PC position using API
-var dolar = document.querySelector('#dolar');
-console.log(dolar)
-// async  function get_dolar(){
-//   const apiUSD = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
-//   const cotizacionDolar = await fetch(apiUSD);
-//   const cotizacionJSON = await cotizacionDolar.json();
-//   const compra = cotizacionJSON[1].casa.compra;
-//   const venta = cotizacionJSON[1].casa.venta;
-//   dolar.innerHTML = `
-//     <p>Cotización dolar: Compra:  ${compra}      Venta ${venta}</p>
-//   `
-// }
-function get_dolar(){
-  fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
-  .then(
-    const cotizacionDolar = await fetch(apiUSD);
-  const cotizacionJSON = await cotizacionDolar.json();
-  const compra = cotizacionJSON[1].casa.compra;
-  const venta = cotizacionJSON[1].casa.venta;
-  dolar.innerHTML = `
-    <p>Cotización dolar: Compra:  ${compra}      Venta ${venta}</p>
-  `
-}
-
-get_dolar();
