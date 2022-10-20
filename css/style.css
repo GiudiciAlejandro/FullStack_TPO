@@ -176,8 +176,8 @@ footer>h3 {
     grid-template-columns: 95%;
     grid-template-areas: 
       "frase  frase frase"
-      "navbar navbar navbar"
       "derecha derecha derecha"
+      "navbar navbar navbar"
       "centro  centro centro ";
     margin: 15px;
   } 
