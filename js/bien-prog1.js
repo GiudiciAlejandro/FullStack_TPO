@@ -50,23 +50,22 @@ function traerHeader(pagina) {
     </div>
     `
 
-  let carouselv = `
-<!-- Carousel que muestra los diferentes lenguajes de programación tratados en el sitio -->
-<div class="slider-frame">
-  <ul>
-    <li><a href="html.html"><img src="images/html.png" alt=""> <h3> HyperText Markup Language</h3></a></li>
-    <li><a href="css.html"><img src="images/css.png" alt=""> <h3> CSS Cascading Style Sheet</h3></a></li>
-    <li><a href="js.html"><img src="images/js.png" alt=""> <h3> JS Javascript</h3></a></li>
-    <li><a href="python.html"><img src="images/python.png" alt=""> <h3> Py Python</h3></a></li>
-  </ul>
-</div>
+  let rotary_img = `
+<!-- Show languages Icons rotating -->
+    <div>
+      <div class="imagenes">
+        <a  href="html.html"><img class="imagen" src="images/html.png" alt=""></a>
+        <a  href="css.html"><img class="imagen" src="images/css.png" alt=""></a>
+        <a  href="js.html"><img class="imagen" src="images/js.png" alt=""></a></h1>
+        <a  href="python.html"><img class="imagen" src="images/python.png" alt=""></a>
+      </div>
+    </div>
       `
   pagina= getNameURLWeb();
-  // console.log(pagina)
-
+  console.log(pagina)
   switch (pagina) {
     case "index.html":
-      encabezado = carouselv;
+      encabezado = rotary_img;
       break;
     case "html.html":
       encabezado = htmlv;
@@ -92,7 +91,7 @@ function getNameURLWeb(){
   var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
   return sPage;
 }
-
+// Modify header in function of the page name
 document.getElementById("header_id").innerHTML = traerHeader()
 
 // HTML page 
@@ -107,3 +106,32 @@ function switchIcon(selector) {
   icon.classList.toggle('fa-chevron-down');
   icon.classList.toggle('fa-chevron-up');
 }
+
+
+
+// Get PC position using API
+var dolar = document.querySelector('#dolar');
+console.log(dolar)
+// async  function get_dolar(){
+//   const apiUSD = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
+//   const cotizacionDolar = await fetch(apiUSD);
+//   const cotizacionJSON = await cotizacionDolar.json();
+//   const compra = cotizacionJSON[1].casa.compra;
+//   const venta = cotizacionJSON[1].casa.venta;
+//   dolar.innerHTML = `
+//     <p>Cotización dolar: Compra:  ${compra}      Venta ${venta}</p>
+//   `
+// }
+function get_dolar(){
+  fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
+  .then(
+    const cotizacionDolar = await fetch(apiUSD);
+  const cotizacionJSON = await cotizacionDolar.json();
+  const compra = cotizacionJSON[1].casa.compra;
+  const venta = cotizacionJSON[1].casa.venta;
+  dolar.innerHTML = `
+    <p>Cotización dolar: Compra:  ${compra}      Venta ${venta}</p>
+  `
+}
+
+get_dolar();
