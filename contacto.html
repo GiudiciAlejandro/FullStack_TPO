@@ -46,28 +46,39 @@
       <main>
         <section class="central">
           <h3><i>Contactanos...</i></h3>
-          <form action="" method="post">
+          <form id=form name="formulario" action="https://formspree.io/f/xjvzedwe" method="post">
 
             <ul class="formulario">
+
               <li>
                 <label>Nombre:</label>
-                <input class="texto" type="text" id="name" name="nombre">
+                <input class="texto" type="text" name="nombre">
               </li>
 
               <li>
                 <label>Correo electrónico:</label>
-                <input class="texto" type="email" id="mail" name="user_mail">
+                <input class="texto" type="email" name="mail">
+              </li>
+
+              <li>
+                <label>Motivo:</label>
+                <select name=motivo>
+                  <option value="elejir">Elejir
+                  <option value="info">Mas infromacion
+                  <option value="laboral">Contacto laboral
+                  <option value="clientes">Atención al cliente
+                  <option value="otros">Otros
+                </select>
               </li>
 
               <li>
                 <label>Mensaje:</label>
-                <textarea class="texto" name="user_message" cols="40" rows="5"></textarea>
+                <textarea class="texto" name="mensaje" cols="40" rows="5"></textarea>
               </li>
 
-                <button type="submit">Enviar</button>
+              <button type="button" onclick="validar()">Enviar</button>
 
             </ul>
-
 
           </form>
           
@@ -80,5 +91,27 @@
 <footer>
   <h3>Bien programado es una página de ayuda para mantener las buenas prácticas en programación</h3>
 </footer>
+
+<script>
+  const $form = document.querySelector('#form')
+  $form.addEventListener('submit', hadleSubmit)
+
+  async function hadleSubmit(event) {
+    event.preventDefault()
+    const form = new FormData(this)
+    const response = await fetch(this.action, {
+      method: this.method,
+      body: form,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+
+    if (response.ok){
+      this.reset()
+      alert('Gracias por contactarnos, recibirás una respuesta pronto')
+    }
+  }
+</script>
 
 </html>

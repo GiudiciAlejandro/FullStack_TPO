@@ -107,3 +107,26 @@ function switchIcon(selector) {
   icon.classList.toggle('fa-chevron-up');
 }
 
+// Validacion del formualio
+
+function validar(){
+  if (document.formulario.nombre.value.length==0){
+    alert("Tiene que escribir su nombre")
+    document.formulario.nombre.focus()
+    return 0;
+  }
+
+  if (document.formulario.mail.value.length==0){
+    alert("Tiene que ingresar un mail")
+    document.formulario.mail.focus()
+    return 0;
+  }
+
+  if (document.formulario.motivo.selectedIndex==0){
+    alert("Debe seleccionar un motivo de su contacto.")
+    document.formulario.motivo.focus()
+    return 0;
+  }
+
+}
+
