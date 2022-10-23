@@ -150,12 +150,12 @@ footer>h3 {
 
  @media (max-width:1100px) {
   .ppal {
-    grid-template-columns: 10rem 4fr;
+    grid-template-columns: 10rem 4fr 1fr;
     grid-template-areas: 
-      "frase  frase"
-      "derecha derecha"
-      "navbar  centro";
-    margin: 15px;
+      "frase  frase frase"
+      "derecha derecha derecha"
+      "navbar  centro centro";
+    margin: 10px;
   }
   
 .ppal .derecha {
@@ -173,13 +173,14 @@ footer>h3 {
 
 @media (max-width: 600px) {
   .ppal {
-    grid-template-columns: 95%;
+    grid-template-columns: 4fr;
     grid-template-areas: 
-      "frase  frase frase"
-      "derecha derecha derecha"
-      "navbar navbar navbar"
-      "centro  centro centro ";
+      "frase"
+      "derecha"
+      "navbar"
+      "centro";
     margin: 15px;
+    min-width: 560px;
   } 
 
   .navmenu>li {

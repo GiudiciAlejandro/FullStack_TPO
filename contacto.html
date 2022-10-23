@@ -76,7 +76,7 @@
                 <textarea class="texto" name="mensaje" cols="40" rows="5"></textarea>
               </li>
 
-              <button type="button" onclick="validar()">Enviar</button>
+              <button type="submit" onclick="validar()">Enviar</button>
 
             </ul>
 
@@ -85,33 +85,12 @@
         </section>
       </main>
     </div>
-  <script src="js/bien-prog1.js"></script>
+  <script src="js/bien-prog1-form.js"></script>
   <script src="https://kit.fontawesome.com/b44b1d9943.js" crossorigin="anonymous"></script>
 </body>
 <footer>
   <h3>Bien programado es una página de ayuda para mantener las buenas prácticas en programación</h3>
 </footer>
 
-<script>
-  const $form = document.querySelector('#form')
-  $form.addEventListener('submit', hadleSubmit)
-
-  async function hadleSubmit(event) {
-    event.preventDefault()
-    const form = new FormData(this)
-    const response = await fetch(this.action, {
-      method: this.method,
-      body: form,
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-
-    if (response.ok){
-      this.reset()
-      alert('Gracias por contactarnos, recibirás una respuesta pronto')
-    }
-  }
-</script>
 
 </html>
