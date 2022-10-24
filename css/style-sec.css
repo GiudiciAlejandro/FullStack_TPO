@@ -210,6 +210,15 @@ footer>h3 {
     margin: 5px;
     width: 85vw;
   }
+
+  .texto{
+    margin-left: 15%;
+  }
+
+  .texto2{
+    margin-left: 28%;
+  }
+
 }
 
 .formulario label {
@@ -225,6 +234,11 @@ footer>h3 {
 .texto{
   font-size: 0.9em;
 }
+
+.texto3{
+  font-size: 0.9em;
+}
+
 
 .responsiveContent {
   position: relative;
