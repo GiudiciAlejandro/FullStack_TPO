@@ -49,133 +49,180 @@
             escalables...</i>
         </h3>
         <p>
-          CSS3 es un estándar de hojas de estilo en cascada que se ha diseñado para mejorar la presentación de documentos HTML. CSS3 introduce nuevas características como el soporte para selectores de tipo de elemento, la propiedad de transformación, la propiedad de animación y las pseudo-clases.
-          <ol>
-            <li>
-              <div onClick="toggleHidden('#info-element-1');switchIcon('#icon1')">Utiliza un preprocesador de CSS como Sass o Less para mejorar la legibilidad y la reutilización del código.
-                <i id="icon1" class="fa-solid fa-chevron-down icon"></i>
-              </div>
-            </li>
-            <p id="info-element-1" hidden>
-        
-              Sass es un preprocesador de CSS que permite la reutilización del código mediante la utilización de variables, mixins y otras funciones. Sass permite mejorar la legibilidad de un archivo CSS y también ayuda a reducir el tamaño del archivo.
-            </p>
-            <li>
-              <div onClick="toggleHidden('#info-element-2');switchIcon('#icon2')">Utiliza un sistema de tipografía modular como Modular Scale para crear una jerarquía clara de tamaños de texto.
-                <i id="icon2" class="fa-solid fa-chevron-down icon"></i>
-              </div>
-            </li>
-            <p id="info-element-2" hidden>
-              Los navegadores web pueden dibujar fuentes de forma diferente, por lo que es importante especificar cómo se ve el texto en el sitio web.
-              <br>
-              Los diseñadores y desarrolladores web a menudo usan una fuente monoespaciada para el código fuente, ya que hace que el código sea más legible.
-              <br>
-              La fuente de un sitio web debe ser legible, por lo que es importante evitar el uso de demasiadas fuentes diferentes.
-              <br>
-              Las fuentes de un sitio web deben cargarse de forma asíncrona para evitar retrasos en la carga de la página.
-              <br>
-              El texto de un sitio web debe estar en un tamaño legible, y es importante considerar el tamaño de la fuente en función del dispositivo en el que se va a ver el sitio.
-            </p>
-            <li>
-              <div onClick="toggleHidden('#info-element-4');switchIcon('#icon4')">Utiliza una guía de estilo consistente para mejorar la legibilidad del código y asegurarte de que todos los elementos del diseño se vean iguales.
-                <i id="icon4" class="fa-solid fa-chevron-down icon"></i>
-              </div>
-            </li>
-            <p id="info-element-4" hidden>
-              
-              Debes utilizar la misma versión de fuentes, espaciado, alineamiento y otros elementos de diseño en todas las páginas del sitio web para mantener una sensación de coherencia y simplicidad.
-              <br>
-              <strong>### Fuentes</strong>
-              <br>
-              Nunca uses más de dos fuentes en un sitio web. Es más fácil de leer y más fácil de mantener.
-              <br>
-              <strong>### Espaciado</strong>
-              <br>
-              Asegúrate de que el espaciado sea consistente en todo el sitio web. El espaciado es un elemento importante del diseño y debe ser tratado como tal.
-              <br>
-              <strong>### Alineamiento</strong>
-              <br>
-              Mantén el alineamiento consistente en todo el sitio web. El alineamiento es un elemento importante del diseño y debe ser tratado como tal.
-              <br>
-              <strong>### Colores</strong>
-              <br>
-              Mantén los colores consistentes en todo el sitio web. Los colores son un elemento importante.
-            </p>
-            <li>
-              <div onClick="toggleHidden('#info-element-5');switchIcon('#icon5')">Utiliza una buena técnica de nomenclatura de CSS para mejorar la legibilidad y mantenibilidad de tu código.
-                <i id="icon5" class="fa-solid fa-chevron-down icon"></i>
-              </div>
-            </li>
-            <p id="info-element-5" hidden>
-              Algunos ejemplos de buenas técnicas de nomenclatura de CSS incluyen el uso de un guión medio para separar los nombres de los elementos y la utilización de nombres en formato de "camel case" para los ID y clases.
-            </p>
-            <li>
-              <div onClick="toggleHidden('#info-element-6');switchIcon('#icon6')">Utiliza herramientas como Autoprefixer para asegurarte de que tu CSS está siempre actualizado.
-                <i id="icon6" class="fa-solid fa-chevron-down icon"></i>
-              </div>
-            </li>
-            <p id="info-element-6" hidden>
-              Autoprefixer es una herramienta de postprocesado de CSS que se encarga de añadir los prefijos de vendor necesarios para que tu CSS sea compatible con todos los navegadores.
-            </p>
-            <li>
-              <div onClick="toggleHidden('#info-element-7');switchIcon('#icon7')">Optimiza tu CSS para mejorar el rendimiento de tu sitio web.
-                <i id="icon7" class="fa-solid fa-chevron-down icon"></i>
-              </div>
-            </li>
-            <p id="info-element-7" hidden>
-              Minificando el CSS
-              <br>
-              Una de las formas más simples de optimizar el CSS es minificarlo. Minificar el CSS significa eliminar todos los espacios en blanco y las líneas en blanco innecesarios del código, lo que reduce el tamapo del archivo. Esto hace que el CSS se cargue más rápido, ya que el navegador tiene que leer menos datos.
-              <br>
-              Hay una gran cantidad de herramientas disponibles para minificar CSS, como CSSNano y css-loader.
-              <br>
-              Utiliza una sola fuente de hoja de estilo
-              <br>
-              En lugar de cargar varias fuentes de hoja de estilo, intenta combinarlas en una sola. De esta forma, el navegador solo tiene que leer un archivo CSS en lugar de varios. Esto también reduce el número de solicitudes HTTP que se realizan, lo que mejora el rendimiento del sitio.
-              <br>
-              Utiliza la regla @import con cautela
-              <br>
-              La regla @import se utiliza para importar una fuente de hoja de estilo en otra. Aunque puede ser útil, también puede ralentizar el sitio si se usa de forma incorrecta. Si utilizas la regla @import en un archivo CSS, asegúrate de que el archivo que estás importando no está siendo utilizado por otras partes de tu sitio. De lo contrario, el navegador tendrá que descargar el archivo CSS una y otra vez, lo que ralentizará el sitio.
-              <br>
-              Reduce el número de elementos CSS en el sitio
-              <br>
-              Otra forma de optimizar el CSS es reducir el número de elementos CSS en el sitio. Si tienes un montón de elementos CSS que no se están utilizando, considera eliminarlos. De esta forma, el navegador no tendrá que leer el código innecesario, lo que mejorará el rendimiento del sitio.
-              <br>
-              Utiliza un sistema de gestión de hojas de estilo
-              <br>
-              Un sistema de gestión de hojas de estilo (CSS) te ayudará a organizar y optimizar el CSS de tu sitio. Los sistemas de gestión de hojas de estilo te permiten definir reglas para el CSS, lo que te permite controlar mejor el código. Esto hace que el CSS sea más fácil de mantener y mejora el rendimiento del sitio.
-            </p>
-            <li>
-              <div onClick="toggleHidden('#info-element-8');switchIcon('#icon8')">Utiliza un estilo de código consistente en todos tus archivos CSS.
-                <i id="icon8" class="fa-solid fa-chevron-down icon"></i>
-              </div>
-            </li>
-            <p id="info-element-8" hidden>
-              <strong>Estilos de código consistentes</strong>
-              <br>
-              Una de las mejores maneras de mantener un código legible y consistente es utilizar un estilo de código. Existen muchos estilos de código, pero el más popular es el estilo de código de Airbnb. El estilo de código de Airbnb se basa en el estilo de código de Google y establece pautas para la indentación, los espacios en blanco, la nomenclatura y otros aspectos de la sintaxis CSS.
-              <br>
-              <strong>Indentación</strong>
-              <br>
-              La indentación es una de las formas más importantes de mantener el código CSS legible. La indentación se utiliza para agrupar elementos relacionados y hacer que el código sea más fácil de leer. Se recomienda utilizar dos espacios en blanco para la indentación.
-              <br>
-              <strong>Espacios en blanco</strong>
-              <br>
-              Los espacios en blanco son otra forma de mantener el código legible. Los espacios en blanco se utilizan para separar los elementos y hacer que el código sea más fácil de leer. Se recomienda utilizar un espacio en blanco después de cada coma y dos espacios en blanco después de cada punto y coma.
-              <br>
-              <strong>Nomenclatura</strong>
-              <br>
-              La nomenclatura es otro aspecto importante de la sintaxis CSS. La nomenclatura se utiliza para nombrar los elementos de CSS de manera que sean fáciles de leer y de entender. Se recomienda utilizar un guión medio (-) para separar las palabras en los nombres de los elementos.
-              <br>
-              <strong>Comentarios</strong>
-              <br>
-              Los comentarios se utilizan para documentar el código y hacer que el código sea más fácil de leer. Se recomienda utilizar comentarios para explicar el código y para agrupar elementos relacionados.
-            </p>
-          </ol>
+          CSS3 es un estándar de hojas de estilo en cascada que se ha diseñado para mejorar la presentación de
+          documentos HTML. CSS3 introduce nuevas características como el soporte para selectores de tipo de elemento, la
+          propiedad de transformación, la propiedad de animación y las pseudo-clases.
+        <ol>
+          <li>
+            <div onClick="toggleHidden('#info-element-1');switchIcon('#icon1')">Utiliza un preprocesador de CSS como
+              Sass o Less para mejorar la legibilidad y la reutilización del código.
+              <i id="icon1" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-1" hidden>
+
+            Sass es un preprocesador de CSS que permite la reutilización del código mediante la utilización de
+            variables, mixins y otras funciones. Sass permite mejorar la legibilidad de un archivo CSS y también ayuda a
+            reducir el tamaño del archivo.
+          </p>
+          <li>
+            <div onClick="toggleHidden('#info-element-2');switchIcon('#icon2')">Utiliza un sistema de tipografía modular
+              como Modular Scale para crear una jerarquía clara de tamaños de texto.
+              <i id="icon2" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-2" hidden>
+            Los navegadores web pueden dibujar fuentes de forma diferente, por lo que es importante especificar cómo se
+            ve el texto en el sitio web.
+            <br>
+            Los diseñadores y desarrolladores web a menudo usan una fuente monoespaciada para el código fuente, ya que
+            hace que el código sea más legible.
+            <br>
+            La fuente de un sitio web debe ser legible, por lo que es importante evitar el uso de demasiadas fuentes
+            diferentes.
+            <br>
+            Las fuentes de un sitio web deben cargarse de forma asíncrona para evitar retrasos en la carga de la página.
+            <br>
+            El texto de un sitio web debe estar en un tamaño legible, y es importante considerar el tamaño de la fuente
+            en función del dispositivo en el que se va a ver el sitio.
+          </p>
+          <li>
+            <div onClick="toggleHidden('#info-element-4');switchIcon('#icon4')">Utiliza una guía de estilo consistente
+              para mejorar la legibilidad del código y asegurarte de que todos los elementos del diseño se vean iguales.
+              <i id="icon4" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-4" hidden>
+
+            Debes utilizar la misma versión de fuentes, espaciado, alineamiento y otros elementos de diseño en todas las
+            páginas del sitio web para mantener una sensación de coherencia y simplicidad.
+            <br>
+            <strong>### Fuentes</strong>
+            <br>
+            Nunca uses más de dos fuentes en un sitio web. Es más fácil de leer y más fácil de mantener.
+            <br>
+            <strong>### Espaciado</strong>
+            <br>
+            Asegúrate de que el espaciado sea consistente en todo el sitio web. El espaciado es un elemento importante
+            del diseño y debe ser tratado como tal.
+            <br>
+            <strong>### Alineamiento</strong>
+            <br>
+            Mantén el alineamiento consistente en todo el sitio web. El alineamiento es un elemento importante del
+            diseño y debe ser tratado como tal.
+            <br>
+            <strong>### Colores</strong>
+            <br>
+            Mantén los colores consistentes en todo el sitio web. Los colores son un elemento importante.
+          </p>
+          <li>
+            <div onClick="toggleHidden('#info-element-5');switchIcon('#icon5')">Utiliza una buena técnica de
+              nomenclatura de CSS para mejorar la legibilidad y mantenibilidad de tu código.
+              <i id="icon5" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-5" hidden>
+            Algunos ejemplos de buenas técnicas de nomenclatura de CSS incluyen el uso de un guión medio para separar
+            los nombres de los elementos y la utilización de nombres en formato de "camel case" para los ID y clases.
+          </p>
+          <li>
+            <div onClick="toggleHidden('#info-element-6');switchIcon('#icon6')">Utiliza herramientas como Autoprefixer
+              para asegurarte de que tu CSS está siempre actualizado.
+              <i id="icon6" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-6" hidden>
+            Autoprefixer es una herramienta de postprocesado de CSS que se encarga de añadir los prefijos de vendor
+            necesarios para que tu CSS sea compatible con todos los navegadores.
+          </p>
+          <li>
+            <div onClick="toggleHidden('#info-element-7');switchIcon('#icon7')">Optimiza tu CSS para mejorar el
+              rendimiento de tu sitio web.
+              <i id="icon7" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-7" hidden>
+            Minificando el CSS
+            <br>
+            Una de las formas más simples de optimizar el CSS es minificarlo. Minificar el CSS significa eliminar todos
+            los espacios en blanco y las líneas en blanco innecesarios del código, lo que reduce el tamapo del archivo.
+            Esto hace que el CSS se cargue más rápido, ya que el navegador tiene que leer menos datos.
+            <br>
+            Hay una gran cantidad de herramientas disponibles para minificar CSS, como CSSNano y css-loader.
+            <br>
+            Utiliza una sola fuente de hoja de estilo
+            <br>
+            En lugar de cargar varias fuentes de hoja de estilo, intenta combinarlas en una sola. De esta forma, el
+            navegador solo tiene que leer un archivo CSS en lugar de varios. Esto también reduce el número de
+            solicitudes HTTP que se realizan, lo que mejora el rendimiento del sitio.
+            <br>
+            Utiliza la regla @import con cautela
+            <br>
+            La regla @import se utiliza para importar una fuente de hoja de estilo en otra. Aunque puede ser útil,
+            también puede ralentizar el sitio si se usa de forma incorrecta. Si utilizas la regla @import en un archivo
+            CSS, asegúrate de que el archivo que estás importando no está siendo utilizado por otras partes de tu sitio.
+            De lo contrario, el navegador tendrá que descargar el archivo CSS una y otra vez, lo que ralentizará el
+            sitio.
+            <br>
+            Reduce el número de elementos CSS en el sitio
+            <br>
+            Otra forma de optimizar el CSS es reducir el número de elementos CSS en el sitio. Si tienes un montón de
+            elementos CSS que no se están utilizando, considera eliminarlos. De esta forma, el navegador no tendrá que
+            leer el código innecesario, lo que mejorará el rendimiento del sitio.
+            <br>
+            Utiliza un sistema de gestión de hojas de estilo
+            <br>
+            Un sistema de gestión de hojas de estilo (CSS) te ayudará a organizar y optimizar el CSS de tu sitio. Los
+            sistemas de gestión de hojas de estilo te permiten definir reglas para el CSS, lo que te permite controlar
+            mejor el código. Esto hace que el CSS sea más fácil de mantener y mejora el rendimiento del sitio.
+          </p>
+          <li>
+            <div onClick="toggleHidden('#info-element-8');switchIcon('#icon8')">Utiliza un estilo de código consistente
+              en todos tus archivos CSS.
+              <i id="icon8" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-8" hidden>
+            <strong>Estilos de código consistentes</strong>
+            <br>
+            Una de las mejores maneras de mantener un código legible y consistente es utilizar un estilo de código.
+            Existen muchos estilos de código, pero el más popular es el estilo de código de Airbnb. El estilo de código
+            de Airbnb se basa en el estilo de código de Google y establece pautas para la indentación, los espacios en
+            blanco, la nomenclatura y otros aspectos de la sintaxis CSS.
+            <br>
+            <strong>Indentación</strong>
+            <br>
+            La indentación es una de las formas más importantes de mantener el código CSS legible. La indentación se
+            utiliza para agrupar elementos relacionados y hacer que el código sea más fácil de leer. Se recomienda
+            utilizar dos espacios en blanco para la indentación.
+            <br>
+            <strong>Espacios en blanco</strong>
+            <br>
+            Los espacios en blanco son otra forma de mantener el código legible. Los espacios en blanco se utilizan para
+            separar los elementos y hacer que el código sea más fácil de leer. Se recomienda utilizar un espacio en
+            blanco después de cada coma y dos espacios en blanco después de cada punto y coma.
+            <br>
+            <strong>Nomenclatura</strong>
+            <br>
+            La nomenclatura es otro aspecto importante de la sintaxis CSS. La nomenclatura se utiliza para nombrar los
+            elementos de CSS de manera que sean fáciles de leer y de entender. Se recomienda utilizar un guión medio (-)
+            para separar las palabras en los nombres de los elementos.
+            <br>
+            <strong>Comentarios</strong>
+            <br>
+            Los comentarios se utilizan para documentar el código y hacer que el código sea más fácil de leer. Se
+            recomienda utilizar comentarios para explicar el código y para agrupar elementos relacionados.
+          </p>
+        </ol>
         </p>
       </section>
       <h3>Aqui tienen un video de una buena práctica para CSS</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/G417Cl-f07s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="responsiveContent">
+        <iframe src="https://www.youtube.com/embed/G417Cl-f07s" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
     </main>
   </div>
   <script src="js/bien-prog1.js"></script>

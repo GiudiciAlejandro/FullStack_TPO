@@ -1,5 +1,5 @@
 function traerHeader(pagina) {
-  let encabezado
+  
   let cssv = `
   <div class="header2">
     <img src="images/css.png" alt="CSS">
@@ -91,11 +91,12 @@ function getNameURLWeb(){
   var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
   return sPage;
 }
+
+
 // Modify header in function of the page name
 document.getElementById("header_id").innerHTML = traerHeader()
 
 // HTML page 
-
 function toggleHidden(selector) {
   element = document.querySelector(selector);
   element.hidden = element.hidden ? false : true;
@@ -108,7 +109,6 @@ function switchIcon(selector) {
 }
 
 // Validacion del formualio
-
 function validar(){
   if (document.formulario.nombre.value.length==0){
     alert("Tiene que escribir su nombre")

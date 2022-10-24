@@ -5,17 +5,9 @@
   padding: 0%;
 }
 
+.enlaces{
+  font-size: 1rem;
 
-.ppal {
-  width: 99vw;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 10rem 4fr 1fr ;
-  grid-template-areas:
-    "frase frase frase"
-    "navbar centro derecha";
-  justify-content: center;
-  justify-items: center;
 }
 
 .ppal .central {
@@ -23,13 +15,21 @@
 }
 
 .ppal .frase {
+  display: block;
+  width: 90vw;
+  background-color: #2b2732;
+  color: white;
+  font-style: italic;
+  font-size: 1.25rem;
+  text-align: center;
+  min-height: 35px;
   grid-area: frase;
 }
 
 .ppal .derecha {
   grid-area: derecha;
   background-image: url("../images/codigo.jpg");
-  width: 90%;
+  width: 80%;
 }
 
 
@@ -118,17 +118,6 @@ ol p {
 }
 
 
-.frase {
-  display: block;
-  width: 97%;
-  background-color: #2b2732;
-  color: white;
-  font-style: italic;
-  font-size: 1.25rem;
-  text-align: center;
-  padding: 12px;
-}
-
 .central>h3 {
   text-align: center;
 }
@@ -148,9 +137,25 @@ footer>h3 {
   text-align: center;
 }
 
- @media (max-width:1100px) {
+
+.ppal {
+  width: 99vw;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 10vw 70vw 10vw;
+  grid-template-rows:auto;
+  grid-template-areas:
+    "frase frase frase"
+    "navbar centro derecha";
+  justify-content: center;
+  justify-items: center;
+}
+
+
+@media (max-width:1100px) {
   .ppal {
-    grid-template-columns: 10rem 4fr 1fr;
+    grid-template-columns: 10vw 70vw 15vw;
+    grid-template-rows:auto;
     grid-template-areas: 
       "frase  frase frase"
       "derecha derecha derecha"
@@ -158,34 +163,33 @@ footer>h3 {
     margin: 10px;
   }
   
-.ppal .derecha {
-  width: 100vw;
-  height: 100px;
+  .ppal .derecha {
+    margin: 5px;
+    width: 85vw;
+    height: 100px;
+  }
+
+  .ppal .frase{
+    margin: 5px;
+    width: 85vw;
+  }
 }
-}
-
-
-/* .ppal .derecha >img {
-  object-fit:fill;
-} */
-
-
 
 @media (max-width: 600px) {
   .ppal {
-    grid-template-columns: 4fr;
+    grid-template-columns: 20rem;
+    grid-template-rows:auto;
     grid-template-areas: 
-      "frase"
-      "derecha"
-      "navbar"
+      "frase "
+      "derecha "
+      "navbar "
       "centro";
-    margin: 15px;
-    min-width: 560px;
+
   } 
 
   .navmenu>li {
     display: inline;
-    margin-right: 10px;
+    margin: 5px;
     padding: 0 2px;
   }
 
@@ -193,18 +197,16 @@ footer>h3 {
     border-top: #000 solid;
     border-bottom: #000 solid;
   }
+
+  .ppal .derecha {
+    margin: 5px;
+    width: 85vw;
+    height: 100px;
+  }
+
+  .ppal .frase{
+    margin: 5px;
+    width: 85vw;
+  }
 }
 
-.formulario label {
-  display: inline-block;
-  width: 200px;
-  text-align: right;
-}
-
-.formulario li {
-  list-style: none;
-}
-
-.texto{
-  font-size: 0.9em;
-}

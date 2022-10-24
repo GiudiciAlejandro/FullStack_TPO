@@ -12,115 +12,130 @@
 </head>
 
 <body>
-  
+
   <header class="header2">
     <span id="header_id"></span>
   </header>
-    <div class="ppal">
-      <aside class="navbar">
-        <nav>
-          <ul class="navmenu">
-            <li>
-              <a href="index.html"><i class="fa-sharp fa-solid fa-house fa-2xl"></i></a>
-            </li>
-            <li>
-              <a href="html.html"><i class="fa-brands fa-html5 fa-2xl"></i></a>
-            </li>
-            <li>
-              <a href="css.html"><i class="fa-brands fa-css3-alt fa-2xl"></i></a>
-            </li>
-            <li>
-              <a href="js.html"><i class="fa-brands fa-js fa-2xl"></i></a>
-            </li>
-            <li>
-              <a href="python.html"><i class="fa-brands fa-python fa-2xl"></i></a>
-            </li>
-            <li>
-              <a href="contacto.html"><i class="fa-sharp fa-solid fa-at fa-2xl"></i></a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-      <q class="frase">Primero resuelve el problema. Entonces, escribe el código
-        -- John Johnson</q>
-      <main>
-        <section class="central">
-          <h3>
-            <i>Mejores prácticas en Python para mejorar nuestro codigo...</i>
-          </h3>
-          <p>
-            Python es un lenguaje sencillo de leer y escribir debido a su alta similitud con el lenguaje humano. Además, se trata de un lenguaje multiplataforma de código abierto y, por lo tanto, gratuito, lo que permite desarrollar software sin límites.
-          <ol>
-            <li>
-              <div onClick="toggleHidden('#info-element-1');switchIcon('#icon1')">Manten indentado tu codigo
-                <i id="icon1" class="fa-solid fa-chevron-down icon"></i>
-              </div>
-            </li>
-            <p id="info-element-1" hidden>
-              Recordar que en Python se maneja la indentación para delimitar bloques de instrucciones.
-            </p>
-
-            <li>
-              <div onClick="toggleHidden('#info-element-2');switchIcon('#icon2')">Varias funciones pequeñas en vez de una sola extensa
-                <i id="icon2" class="fa-solid fa-chevron-down icon"></i>
-              </div>
-            </li>
-            <p id="info-element-2" hidden>
-              Si el código se convierte muy largo, como una función extensa que ocupe más de una pantalla, siéntase cómodo de hacerlo más pequeño reduciéndolo en funciones más pequeñas. Código más corto es más fácil para hacer pruebas y para darle mantenimiento.
-            </p>
-
-            <li>
-              <div onClick="toggleHidden('#info-element-4');switchIcon('#icon4')">Utilice nombres descriptivos
-                <i id="icon4" class="fa-solid fa-chevron-down icon"></i>
-              </div>
-            </li>
-            <p id="info-element-4" hidden>
-              Cuando sea posible, define variables con nombres que tengan algún sentido o que puedas identificar fácilmente, no importa que sean más largas. Por ejemplo, en un programa podríamos escribir: 
-              <br><br>
-              A = 10		#altura 
-              <br>
-              B = 3.5		#base 
-              <br>
-              print (“El volumen es %.1f” % (A*B)) 
-              <br><br>
-              Pero ¿Qué significan A y B? Lo sabemos por el comentario (bien hecho), pero si más adelante nos encontramos con esas variables, tendremos que recordar cual es cual. Es mejor usar nombres con significado: 
-              <br><br>
-              Altura = 10 
-              <br>
-              Base = 3.5 
-              <br>
-              print (“El volumen es %.1f” % (Altura*Base)) 
-              <br><br>
-              Lo mismo con las funciones, módulos y clases, utilizar nombre que describan su funcionamiento ayuda a comprender el código.
-            </p>
-
-            <li>
-              <div onClick="toggleHidden('#info-element-5');switchIcon('#icon5')">Comentar cuando sea justo y necesario
-                <i id="icon5" class="fa-solid fa-chevron-down icon"></i>
-              </div>
-            </li>
-            <p id="info-element-5" hidden>
-              Usar los comentarios dentro de las funciones para
-              describir las variables (sólo cuando su utilidad sea potencialmente dudosa) y cuando existan
-              bloques de código difíciles de entender a primera vista; el exceso de comentarios vuelve ilegible
-              el código
-            </p>
-
-            <li>
-              <div onClick="toggleHidden('#info-element-6');switchIcon('#icon6')">Definir variables locales al inicio de la implementación de cada función
-                <i id="icon6" class="fa-solid fa-chevron-down icon"></i>
-              </div>
-            </li>
-            <p id="info-element-6" hidden>
-              Evitar el uso de variables globales, al usar variables locales es mucho más fácil ver dónde se están utilizando y para que 
-            </p>
-            </ol>
+  <div class="ppal">
+    <aside class="navbar">
+      <nav>
+        <ul class="navmenu">
+          <li>
+            <a href="index.html"><i class="fa-sharp fa-solid fa-house fa-2xl"></i></a>
+          </li>
+          <li>
+            <a href="html.html"><i class="fa-brands fa-html5 fa-2xl"></i></a>
+          </li>
+          <li>
+            <a href="css.html"><i class="fa-brands fa-css3-alt fa-2xl"></i></a>
+          </li>
+          <li>
+            <a href="js.html"><i class="fa-brands fa-js fa-2xl"></i></a>
+          </li>
+          <li>
+            <a href="python.html"><i class="fa-brands fa-python fa-2xl"></i></a>
+          </li>
+          <li>
+            <a href="contacto.html"><i class="fa-sharp fa-solid fa-at fa-2xl"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <q class="frase">Primero resuelve el problema. Entonces, escribe el código
+      -- John Johnson</q>
+    <main>
+      <section class="central">
+        <h3>
+          <i>Mejores prácticas en Python para mejorar nuestro codigo...</i>
+        </h3>
+        <p>
+          Python es un lenguaje sencillo de leer y escribir debido a su alta similitud con el lenguaje humano. Además,
+          se trata de un lenguaje multiplataforma de código abierto y, por lo tanto, gratuito, lo que permite
+          desarrollar software sin límites.
+        <ol>
+          <li>
+            <div onClick="toggleHidden('#info-element-1');switchIcon('#icon1')">Manten indentado tu codigo
+              <i id="icon1" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-1" hidden>
+            Recordar que en Python se maneja la indentación para delimitar bloques de instrucciones.
           </p>
-        </section>
+
+          <li>
+            <div onClick="toggleHidden('#info-element-2');switchIcon('#icon2')">Varias funciones pequeñas en vez de una
+              sola extensa
+              <i id="icon2" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-2" hidden>
+            Si el código se convierte muy largo, como una función extensa que ocupe más de una pantalla, siéntase cómodo
+            de hacerlo más pequeño reduciéndolo en funciones más pequeñas. Código más corto es más fácil para hacer
+            pruebas y para darle mantenimiento.
+          </p>
+
+          <li>
+            <div onClick="toggleHidden('#info-element-4');switchIcon('#icon4')">Utilice nombres descriptivos
+              <i id="icon4" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-4" hidden>
+            Cuando sea posible, define variables con nombres que tengan algún sentido o que puedas identificar
+            fácilmente, no importa que sean más largas. Por ejemplo, en un programa podríamos escribir:
+            <br><br>
+            A = 10 #altura
+            <br>
+            B = 3.5 #base
+            <br>
+            print (“El volumen es %.1f” % (A*B))
+            <br><br>
+            Pero ¿Qué significan A y B? Lo sabemos por el comentario (bien hecho), pero si más adelante nos encontramos
+            con esas variables, tendremos que recordar cual es cual. Es mejor usar nombres con significado:
+            <br><br>
+            Altura = 10
+            <br>
+            Base = 3.5
+            <br>
+            print (“El volumen es %.1f” % (Altura*Base))
+            <br><br>
+            Lo mismo con las funciones, módulos y clases, utilizar nombre que describan su funcionamiento ayuda a
+            comprender el código.
+          </p>
+
+          <li>
+            <div onClick="toggleHidden('#info-element-5');switchIcon('#icon5')">Comentar cuando sea justo y necesario
+              <i id="icon5" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-5" hidden>
+            Usar los comentarios dentro de las funciones para
+            describir las variables (sólo cuando su utilidad sea potencialmente dudosa) y cuando existan
+            bloques de código difíciles de entender a primera vista; el exceso de comentarios vuelve ilegible
+            el código
+          </p>
+
+          <li>
+            <div onClick="toggleHidden('#info-element-6');switchIcon('#icon6')">Definir variables locales al inicio de
+              la implementación de cada función
+              <i id="icon6" class="fa-solid fa-chevron-down icon"></i>
+            </div>
+          </li>
+          <p id="info-element-6" hidden>
+            Evitar el uso de variables globales, al usar variables locales es mucho más fácil ver dónde se están
+            utilizando y para que
+          </p>
+        </ol>
+        </p>
         <h3>Te dejamos un vídeo para que aprendas a realizar un código mas limpio:</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/_oRd_8jSbrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </main>
-    </div>
+        <div class="responsiveContent">
+          <iframe src="https://www.youtube.com/embed/_oRd_8jSbrU" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+    </main>
+  </div>
   <script src="js/bien-prog1.js"></script>
   <script src="https://kit.fontawesome.com/b44b1d9943.js" crossorigin="anonymous"></script>
 </body>
